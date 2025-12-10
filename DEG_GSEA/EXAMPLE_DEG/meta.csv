@@ -1,0 +1,6 @@
+sample,condition,age,sex,race,batch
+sample1,pos,30,male,race1,batch1
+sample2,pos,67,male,race2,batch1
+sample3,neg,13,female,race1,batch2
+sample4,pos,5,male,race3,batch2
+sample5,neg,21,female,race2,batch1

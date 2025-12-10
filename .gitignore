@@ -1,0 +1,16 @@
+data/
+resource/gencode.v45.primary_assembly.annotation.gtf
+resource/GRCh38.primary_assembly.genome.fa
+resource/GRCh38.primary_assembly.genome.fa.fai
+resource/GRCh38.primary_assembly.genome.dict
+resource/hg38_haplo_count_blacklist.chr.bed
+resource/dbsnps_indel_interval
+resource/ref
+1_rnaseq/logs_slurm/
+resource/reference_genome_index/
+resource/hg38_haplo_count_blacklist.chr.bed
+2_phaser/logs_slurm/
+3_rsem/logs_slurm/
+rna_only_pipeline/logs_slurm
+rsem/logs_slurm/
+4_toga/logs_slurm/

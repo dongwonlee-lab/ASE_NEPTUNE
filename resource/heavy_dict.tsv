@@ -1,0 +1,63 @@
+Columns	Description
+contig	Chromosome
+start	Start of genomic location
+stop	End of genomic location
+name	Name of the gene
+aCount	Read counts on haplotype A
+bCount	Read counts on haplotype B
+totalCount	Total haplotypic counts(aCount + hapB_bCount)
+log2_aFC	aCount / bCount
+n_variants	Number of heterozygous variants used in the gene
+variants	Heterozygous variants used in the gene
+type	Type of the gene (e.g. protein-coding, lncRNA…)
+gene_symbol	Gene symbol of the gene
+overlapped_flags	True if the gene is overlapped with other COV genes
+overlapped_gene_name	Name of the overlapped genes
+overlapped_gene_symbol	Gene symbol of the overlapped genes
+overlapped_gene_type	Type of the overlapped genes
+overlapped_length	The length of overlapped region
+overlapped_region	Overlapped genomic region with overlapped genes
+norm_rna_exp	Normalizd RNA expression for the gene
+binom_p	p value from binomial test using aCount and bCount
+aCount_blOR	Read counts on haplotype A without overlapping region
+bCount_blOR	Read counts on haplotype B without overlapping region
+totalCount_blOR	Total haplotypic counts(aCount + hapB_bCount) without overlapping region
+log2_aFC_blOR	aCount / bCount without overlapping region
+n_variants_blOR	Number of heterozygous variants used in the gene without overlapping region
+variants_blOR	Heterozygous variants used in the gene without overlapping region
+binom_p_blOR	p value from binomial test using aCount and bCount without overlapping region
+totalCount_diff	totalCount - totalCount_blOR
+GT.EXP_CUTOFF	TRUE if the gene is above the normalized RNA expression cutoff
+gene_group_by_union_overlapping_variants	Gene group by union of overlapping variants
+union_overlapping_variants	Union of overlapping variants
+union_variants	Union of variants from gene_group_by_union_overlapping_variants
+gene_group_by_overlapping_region	Gene group by overlapping region
+variants_overlapping	Variants that are shared
+gene_group_by_overlapping_variant	Gene group that share the variants
+union_variants_overlapping_exon	Exonic status of union_variants 
+union_overlapping_variants_snp_count	Allelic counts of union_variants
+union_exp_weight	Normalized RNA expression and exonic status weight
+union_total_exp_weight	Weight of each variant
+union_exp_weight_proportion	Proportion of weight of each variant
+union_adj_snp_count	Adjusted allelic counts of the gene
+union_total_adj_snp_count	Adjusted total allelic counts for the overlapping regions
+CPOV	CPOV of the gene
+IRPG	IRPG of the gene
+overlappedCount_by_CPOV	Adjusted total haplotypic counts for the overlapping regions
+adj_totalCount	Adjusted total haplotypic counts of the gene
+gene_cluster	Genes grouped if the regions are mutally shared
+TAG	Tags to show whether the gene was resolved(R), resolved by cpov(RC), excluded(E), unresolved(U)
+TOGA_aCount	Read counts on haplotype A after TOGA
+TOGA_bCount	Read counts on haplotype B after TOGA
+TOGA_totalCount	Total haplotypic counts(aCount + hapB_bCount) after TOGA
+TOGA_log2_aFC	aCount / bCount after TOGA
+TOGA_n_variants	Number of heterozygous variants used in the gene after TOGA
+TOGA_variants	Heterozygous variants used in the gene after TOGA
+TOGA_binom_p	p value from binomial test using aCount and bCount after TOGA
+TOGA_FDR	Multiple testing (FDR) on binomial p-value
+TOGA_ASE_COV	Whether the gene is COV or ASE gene determined by TOGA
+TOGA_MHF	Major Haplotypic Fraction. 
+hapA_allele	Alleles on haplotypeA
+hapB_allele	Alleles on haplotypeB
+hapA_allele_count	Allelic counts on haplotypeA
+hapB_allele_count	Allelic counts on haplotypeB
